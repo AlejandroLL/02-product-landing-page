@@ -3,18 +3,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  font-size: 16px;
   background-color: #ffffff;
   color: #333;
   line-height: 1.6;
-}
+} 
 
 /* Hero Section */
 .hero {
   text-align: center;
   background-color: #eaf6ff; /* soft light blue background */
+  background-image: linear-gradient(135deg, #eaf6ff 50%, #b3a8fe 100%); /* soft diagonal gradient */
+  color: #16213e; /* ensure strong contrast on top of gradient */
+  padding: 60px 20px; /* space around hero content (pixels) */
 }
 
 .hero img {
+  width: 250px;
   border-radius: 50%;
   border: solid 4px #16213e;
   margin-bottom: 20px;
@@ -23,12 +28,15 @@ body {
 .hero h1 {
   margin: 20px 0 10px;
   color: #16213e;
+  font-size: 3.5em; /* larger, relative to parent font size */
+  font-weight: 700;
+  line-height: 1.05;
 }
 
 .hero p {
   margin: 10px 0 20px;
   color: #555;
-}
+} 
 
 .hero button {
   background-color: #533483; 
@@ -36,10 +44,16 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  padding: 18px 36px; /* larger touch target */
+  font-size: 1.1em; /* larger, relative to parent font size */
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(83, 52, 131, 0.2);
+  transition: background-color 150ms ease, transform 150ms ease;
 }
 
 .hero button:hover {
   background-color: #362056; 
+  transform: translateY(-2px);
 }
 
 /* Product Description Section */
@@ -48,8 +62,15 @@ body {
   text-align: center;
   background-color: #ffffff;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 900px;
+  font-size: 1.25em;
 }
+
+.description p {
+  font-size: 1.125rem; /* ~18px for better readability */
+  color: #444;
+  margin: 0;
+} 
 
 /* How It Works Section */
 .how-it-works {
@@ -61,8 +82,11 @@ body {
 .how-it-works h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #0f3460
-}
+  color: #0f3460;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+} 
 
 .how-it-works ol {
   list-style: decimal;
